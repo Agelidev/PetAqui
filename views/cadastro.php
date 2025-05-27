@@ -2,16 +2,12 @@
 include 'header.php';
 ?>
 
-<h2>Cadastro</h2>
-
 <?php
-
 
 include 'db.php';
 
 $query_cadastro = "SELECT * FROM clientes"; 
 
-// Executa a consulta
 $consulta_cadastro = mysqli_query($conexao, $query_cadastro);
 
 if (!$consulta_cadastro) {

@@ -17,7 +17,7 @@ if (!$consulta_cadastro) {
     echo "Erro na consulta: " . mysqli_error($conexao);
 }
 ?>
-<div id="div-tabela">
+<div>
     <table>
         <thead>
             <tr>
