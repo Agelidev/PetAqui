@@ -37,6 +37,6 @@ if (!$consulta_cadastro) {
         <input type="text" name="senha_cli" placeholder="Senha" required>
         </div>
         
-        <input type="submit" value="Cadastrar" class="btn">
+        <input type="submit" value="Cadastrar" class="btn btncadlog">
     </form>
 </div>

@@ -17,7 +17,7 @@
 		<input type="password" name="senha_fun" placeholder="Senha">
 		</div>
 
-		<input type="submit" value="Entrar" class="btn">
+		<input type="submit" value="Entrar" class="btn btncadlog">
 	</form>
 </div>
 <br>

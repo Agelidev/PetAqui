@@ -72,13 +72,13 @@ form h1{
     font-size: 30px;
     text-align: center;
     color: #0a111f;
-    margin: 10px 10px 5px;
+    margin: 10px;
 }
 
 form h2 {
     font-size: 20px;
     text-align: center;
-    margin: 10px 10px 5px;
+    margin: 10px;
 }
 
 .input-box {
@@ -121,4 +121,13 @@ table {
     border: #e5e5e5;
     font-size: 18px;
     color: #14213d;
+}
+
+.alert {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 10px 5px;
+}
+.btncadlog{
+    width: 100% !important;
 }
