@@ -12,6 +12,14 @@ $query_cadastro = "INSERT INTO clientes (nome_cli, cpf_cli, email_cli, senha_cli
 
 $consulta_cadastro = mysqli_query($conexao, $query_cadastro);
 
+if (mysqli_query($conexao, $query_cadastro)) 
+{ 
+    echo "<script> alert('Novo cliente cadastrado.'); 
+    window.location.href = 'index.php?pagina=clientescadastrados' </script>"; 
+} 
+else 
+{ 
+    echo "Erro ao cadastrar o cliente: " . mysqli_error($conexao); 
+}
 
-header('location:index.php?pagina=cadastro');
 ?>
