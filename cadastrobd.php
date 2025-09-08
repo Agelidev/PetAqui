@@ -9,9 +9,7 @@ $senha = $_POST['senha_cli'];
 
 $query_cadastro = "INSERT INTO clientes (nome_cli, cpf_cli, email_cli, senha_cli)
             VALUES('$nome','$cpf','$email', '$senha')";
-
-$consulta_cadastro = mysqli_query($conexao, $query_cadastro);
-
+            
 if (mysqli_query($conexao, $query_cadastro)) 
 { 
     echo "<script> alert('Novo cliente cadastrado.'); 
