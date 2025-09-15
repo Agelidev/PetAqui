@@ -13,7 +13,7 @@
     <nav>
         <img src="img/PetAqui.svg" alt="Logo - PetAqui" class="logo">
             <ul>
-                <li><a href="?pagina=cadastro">Cadastro</a></li>
+                <li><a href="?pagina=inserecliente">Cadastrar</a></li>
                 <li><a href="?pagina=clientescadastrados">Clientes Cadastrados</a></li>
             </ul>
         <div>

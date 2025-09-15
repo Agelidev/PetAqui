@@ -40,8 +40,8 @@ if (!$consulta_cadastro) {
                     echo '<td>' . $linha['cpf_cli'] . '</td>';
                     echo '<td>' . $linha['email_cli'] . '</td>';
                     echo '<td>' . $linha['senha_cli'] . '</td>';
-                    echo '<td> </td>';
-                    echo '<td> <a href="processa_deleta_cliente.php?idparametro='.$linha['id_cli'].'">Deletar</a> </td> </tr>';
+                    echo '<td> <a href="edita_cliente.php?idparametro='.$linha['id_cli'].'">Editar</a> </td> </td>';
+                    echo '<td> <a href="deleta_cliente.php?idparametro='.$linha['id_cli'].'">Deletar</a> </td> </tr>';
                 }
         ?>
         </tbody>
