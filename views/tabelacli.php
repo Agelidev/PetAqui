@@ -26,8 +26,6 @@ if (!$consulta_cadastro) {
                 <th>CPF</th>
                 <th>Email</th>
                 <th>Senha</th>
-                <th>Editar</th>
-                <th>Deletar</th>
             </tr>
         </thead>
         <tbody>
@@ -42,6 +40,7 @@ if (!$consulta_cadastro) {
                     echo '<td>' . $linha['senha_cli'] . '</td>';
                     echo '<td> <a href="edita_cliente.php?idparametro='.$linha['id_cli'].'">Editar</a> </td> </td>';
                     echo '<td> <a href="deleta_cliente.php?idparametro='.$linha['id_cli'].'">Deletar</a> </td> </tr>';
+                    echo '</tr>';
                 }
         ?>
         </tbody>
