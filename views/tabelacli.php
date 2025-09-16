@@ -26,6 +26,8 @@ if (!$consulta_cadastro) {
                 <th>CPF</th>
                 <th>Email</th>
                 <th>Senha</th>
+                <th>Editar</th>
+                <th>Deletar</th>
             </tr>
         </thead>
         <tbody>
