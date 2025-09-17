@@ -1,8 +1,8 @@
 <?php
 
-include'db.php';
+include 'db.php';
 
-$id_cliente = $_POST['id_cliente'];
+$id_cliente = $_POST['idparametro'];
 $nome_cliente = $_POST['nome_cliente'];
 $cpf_cliente = $_POST['cpf_cliente'];
 $email_cliente = $_POST['email_cliente'];
@@ -13,4 +13,5 @@ WHERE id_cli = $id_cliente";
 
 mysqli_query($conexao, $query_editar);
 
-header('location:index.php?pagina=insere_cliente');
+header('location:index.php?pagina=insere_cliente'); 
+?>

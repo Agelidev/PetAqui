@@ -7,6 +7,6 @@ $db = "petshop";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $db);
 
-$query_cadastro = "SELECT * FROM clientes"; 
-$consulta_cadastro = mysqli_query($conexao, $query_cadastro);
+$query = "SELECT *FROM clientes";
+$consulta_cliente = mysqli_query($conexao, $query);
 ?>
