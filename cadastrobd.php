@@ -15,7 +15,7 @@ $consulta_cadastro = mysqli_query($conexao, $query_cadastro);
 if (mysqli_query($conexao, $query_cadastro)) 
 { 
     echo "<script> alert('Novo cliente cadastrado.'); 
-    window.location.href = 'index.php?pagina=clientescadastrados' </script>"; 
+    window.location.href = 'index.php?pagina=tabelacli' </script>"; 
 } 
 else 
 { 

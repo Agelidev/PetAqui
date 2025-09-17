@@ -12,7 +12,7 @@ mysqli_query($conexao, $query_deletar);
 if (mysqli_query($conexao, $query_deletar)) 
 { 
     echo "<script> alert('Cliente removido com sucesso.'); 
-    window.location.href = 'index.php?pagina=clientescadastrados' </script>"; 
+    window.location.href = 'index.php?pagina=tabelacli' </script>"; 
 } 
 else 
 { 

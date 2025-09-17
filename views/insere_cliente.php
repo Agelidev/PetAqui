@@ -3,16 +3,11 @@ include 'header.php';
 ?>
 
 <?php
-
 include 'db.php';
-
-if (!$consulta_cadastro) {
-    echo "Erro na consulta: " . mysqli_error($conexao);
-}
 ?>
 
 <div id="container">
-    <form method="post" action="edita_cliente.php">
+    <form method="post" action="cadastrobd.php">
             <h1>Cadastro</h1>
             <h2>Digite o nome do cliente</h2>
             <div class ="input-box">

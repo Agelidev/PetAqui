@@ -1,10 +1,6 @@
-<?php
-
+<?php 
+include 'header.php';
 include 'db.php';
-
-$query_cadastro = "SELECT * FROM clientes"; 
-
-$consulta_cadastro = mysqli_query($conexao, $query_cadastro);
 
 $id_cliente = $_GET['idparametro'];
 
@@ -28,7 +24,7 @@ while ($linha = mysqli_fetch_array($consulta_cadastro)) {
                     <input type="text" name="cpf_cliente" value="<?php echo $linha['cpf_cli'] ?>">
                     </div>
 
-                    <label>Novo email</label><br>
+                    <h2>Novo Email</h2>
                     <div class ="input-box">
                     <input type="text" name="email_cliente" placeholder="Teste placeholder" value="<?php echo $linha['email_cli'] ?>">
                     </div>
@@ -38,7 +34,7 @@ while ($linha = mysqli_fetch_array($consulta_cadastro)) {
                     <input type="text" name="senha_cliente" value="<?php echo $linha['senha_cli'] ?>">
                     </div>
 
-                    <input type="submit" value="Editar aluno" class="btn btncadlog">
+                    <input type="submit" value="Editar cliente" class="btn btncadlog">
                 </form>
             </div>
 		<?php 
