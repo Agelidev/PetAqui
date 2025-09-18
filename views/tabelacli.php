@@ -8,12 +8,7 @@ include 'header.php';
 
 include 'db.php';
 
-$query_cadastro = "SELECT * FROM clientes"; 
-
-// Executa a consulta
-$consulta_cadastro = mysqli_query($conexao, $query_cadastro);
-
-if (!$consulta_cadastro) {
+if (!$consulta_cliente) {
     echo "Erro na consulta: " . mysqli_error($conexao);
 }
 ?>
@@ -33,14 +28,14 @@ if (!$consulta_cadastro) {
         <tbody>
         <?php
                 // Laço para exibir os dados dos clientes
-                while ($linha = mysqli_fetch_array($consulta_cadastro)) {
+                while ($linha = mysqli_fetch_array($consulta_cliente)) {
                     echo '<tr>';
                     echo '<td>' . $linha['id_cli'] . '</td>';
                     echo '<td>' . $linha['nome_cli'] . '</td>';
                     echo '<td>' . $linha['cpf_cli'] . '</td>';
                     echo '<td>' . $linha['email_cli'] . '</td>';
                     echo '<td>' . $linha['senha_cli'] . '</td>';
-                    echo '<td> <a href="processa_edita_cliente.php?idparametro='.$linha['id_cli'].'">Editar</a> </td> </td>';
+                    echo '<td> <a href="edita_cliente.php?idparametro='.$linha['id_cli'].'">Editar</a> </td> </td>';
                     echo '<td> <a href="processa_deleta_cliente.php?idparametro='.$linha['id_cli'].'">Deletar</a> </td> </tr>';
                     echo '</tr>';
                 }

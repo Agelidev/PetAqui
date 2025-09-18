@@ -4,7 +4,7 @@ include 'db.php';
 
 $id_cliente = $_GET['idparametro'];
 
-while ($linha = mysqli_fetch_array($consulta_cadastro)) {
+while ($linha = mysqli_fetch_array($consulta_cliente)) {
 
     if($linha['id_cli'] == $id_cliente){ 
         ?>
@@ -12,7 +12,7 @@ while ($linha = mysqli_fetch_array($consulta_cadastro)) {
                 <form method="post" action="processa_edita_cliente.php">
 
                     <h1>Editar cadastro</h1>
-                    <input type="hidden" name="idparametro" value= "<?php echo $linha['id_cli']; ?>">
+                    <input type="hidden" name="id_cliente" value= "<?php echo $linha['id_cli']; ?>">
 
                     <h2>Novo nome</h2>
                     <div class ="input-box">
